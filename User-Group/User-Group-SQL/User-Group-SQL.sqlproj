@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{31562870-2d9e-409b-a877-5ded2f189e73}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -59,8 +59,15 @@
     <Folder Include="Tables" />
     <Folder Include="Views" />
     <Folder Include="Stored Procedures" />
+    <Folder Include="Publish Profiles" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\MEMBER.sql" />
+    <Build Include="Tables\MEMBER_EMAIL.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Publish Profiles\localhost.publish.xml" />
+    <None Include="Scripts\DEMO.sql" />
   </ItemGroup>
 </Project>
